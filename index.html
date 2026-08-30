@@ -1,97 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Gaurav Kumar - Personal Portfolio">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
 <title>Gaurav Kumar | Portfolio</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <header class="header">
-<nav class="nav container">
-<a class="logo" href="#home">Gaurav<span>.</span></a>
-<button class="menu-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
-<ul class="nav-links">
-<li><a href="#home">Home</a></li><li><a href="#about">About</a></li>
-<li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li><li><a href="#contact">Contact</a></li>
-</ul>
-</nav>
+<a href="#home" class="logo">Gaurav<span>.</span></a>
+<nav id="navMenu" class="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
+<div class="actions"><button id="themeToggle" class="icon-btn">☀️</button><button id="menuToggle" class="menu-btn">☰</button></div>
 </header>
 
 <main>
-<section id="home" class="hero section">
-<div class="container hero-grid">
-<div>
-<p class="eyebrow">Computer Science &amp; Engineering</p>
+<section id="home" class="section hero">
+<div class="hero-content reveal">
+<p class="badge">COMPUTER SCIENCE & ENGINEERING</p>
+<p id="greeting" class="greeting">Hello! 👋</p>
 <h1>Hi, I'm <span>Gaurav Kumar</span></h1>
 <p class="hero-text">A B.Tech CSE student from Uttarakhand who enjoys building practical web and software projects. I am interested in web development, Python, mobile applications and problem solving.</p>
-<div class="actions"><a class="btn primary" href="#projects">View Projects</a><a class="btn secondary" href="#contact">Contact Me</a></div>
-<div class="stats"><div><b>CSE</b><small>Student</small></div><div><b>HTML/CSS</b><small>Web</small></div><div><b>Python</b><small>Programming</small></div></div>
-</div>
-<div class="profile-card">
-<div class="avatar">GK</div><h2>Developer &amp; Learner</h2>
-<p>Creating clean, responsive and useful digital experiences.</p>
-<div class="available"><i></i> Open to opportunities</div>
-</div>
+<div class="buttons"><a href="#projects" class="btn primary">View Projects</a><a href="#contact" class="btn secondary">Contact Me</a></div>
+<div class="stats"><div><b>CSE</b><small>Student</small></div><div><b>HTML/CSS/JS</b><small>Web</small></div><div><b>Python</b><small>Programming</small></div></div>
 </div>
 </section>
 
 <section id="about" class="section">
-<div class="container">
-<div class="heading"><p>01 — About</p><h2>Turning ideas into <span>projects</span></h2></div>
-<div class="about-grid">
-<article class="card"><h3>Who I Am</h3><p>I am Gaurav Kumar, a Computer Science &amp; Engineering student interested in developing practical software and web solutions. I enjoy learning new technologies and applying them through hands-on projects.</p></article>
-<article class="card"><h3>Education</h3><p><strong>B.Tech — Computer Science &amp; Engineering</strong></p><p>Institute of Technology Gopeshwar, Uttarakhand.</p><p class="muted">Also completed Polytechnic in Information Technology.</p></article>
-</div>
-</div>
+<div class="title reveal"><p>ABOUT ME</p><h2>Building useful things with code.</h2></div>
+<div class="two-col"><div class="card reveal"><h3>Who I Am</h3><p>I am a Computer Science & Engineering student focused on learning by building projects. I enjoy frontend development, Python programming and practical software solutions.</p></div>
+<div class="card reveal"><h3>Current Focus</h3><ul><li>Responsive web development</li><li>JavaScript and DOM manipulation</li><li>Python and problem solving</li><li>Mobile application development</li></ul></div></div>
 </section>
 
-<section id="skills" class="section alt">
-<div class="container">
-<div class="heading"><p>02 — Skills</p><h2>My technical <span>toolkit</span></h2></div>
-<div class="skills-grid">
-<article class="card"><div class="icon">&lt;/&gt;</div><h3>Web Development</h3><div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span></div></article>
-<article class="card"><div class="icon">PY</div><h3>Programming</h3><div class="tags"><span>Python</span><span>Problem Solving</span></div></article>
-<article class="card"><div class="icon">RN</div><h3>Mobile Development</h3><div class="tags"><span>React Native</span><span>Expo</span></div></article>
-</div>
-</div>
-</section>
+<section id="skills" class="section alt"><div class="title reveal"><p>SKILLS</p><h2>Technologies I work with</h2></div>
+<div class="skills"><div class="skill reveal">HTML5<div class="bar"><i style="width:90%"></i></div></div><div class="skill reveal">CSS3<div class="bar"><i style="width:85%"></i></div></div><div class="skill reveal">JavaScript<div class="bar"><i style="width:75%"></i></div></div><div class="skill reveal">Python<div class="bar"><i style="width:80%"></i></div></div><div class="skill reveal">React Native<div class="bar"><i style="width:70%"></i></div></div><div class="skill reveal">Git & GitHub<div class="bar"><i style="width:75%"></i></div></div></div></section>
 
-<section id="projects" class="section">
-<div class="container">
-<div class="heading"><p>03 — Projects</p><h2>Things I've <span>built</span></h2></div>
-<div class="projects-grid">
-<article class="card project"><b class="number">01</b><p class="type">Web Development</p><h3>Personal Portfolio Website</h3><p>A responsive personal portfolio showcasing introduction, education, skills, projects and contact information.</p><div class="tags"><span>HTML5</span><span>CSS3</span><span>Responsive</span></div></article>
-<article class="card project"><b class="number">02</b><p class="type">AI + Mobile</p><h3>Smart Waste Management System</h3><p>A college project concept using computer vision, mobile apps and notifications to support waste monitoring.</p><div class="tags"><span>Python</span><span>YOLO</span><span>React Native</span></div></article>
-<article class="card project"><b class="number">03</b><p class="type">Learning Project</p><h3>Web &amp; Software Experiments</h3><p>Small projects and experiments created while learning modern development concepts and improving problem-solving skills.</p><div class="tags"><span>JavaScript</span><span>Python</span><span>GitHub</span></div></article>
-</div>
-</div>
-</section>
+<section id="projects" class="section"><div class="title reveal"><p>PROJECTS</p><h2>Some things I've built</h2></div>
+<div class="projects"><article class="project reveal"><b>01</b><h3>Smart Waste Management</h3><p>AI-based waste detection and notification concept using computer vision and mobile applications.</p><span>Python</span><span>YOLO</span><span>React Native</span></article>
+<article class="project reveal"><b>02</b><h3>Personal Portfolio</h3><p>A responsive portfolio website demonstrating HTML, CSS and JavaScript skills.</p><span>HTML</span><span>CSS</span><span>JavaScript</span></article>
+<article class="project reveal"><b>03</b><h3>Interactive Web Experiments</h3><p>Browser projects focused on DOM manipulation, events, forms and user interaction.</p><span>DOM</span><span>Events</span><span>UI</span></article></div></section>
 
-<section id="contact" class="section alt">
-<div class="container contact-grid">
-<div><div class="heading"><p>04 — Contact</p><h2>Let's <span>connect</span></h2></div><p class="muted">Have an internship, project or collaboration idea? Send me a message.</p></div>
-<form class="contact-form">
-<label for="name">Name</label><input id="name" required placeholder="Your name">
-<label for="email">Email</label><input id="email" type="email" required placeholder="your@email.com">
-<label for="message">Message</label><textarea id="message" rows="5" required placeholder="Write your message..."></textarea>
-<button class="btn primary" type="submit">Send Message</button>
-</form>
-</div>
-</section>
+<section id="gallery" class="section alt"><div class="title reveal"><p>INTERACTIVE GALLERY</p><h2>Click a card to preview</h2></div>
+<div class="gallery"><button class="gallery-item reveal" data-title="Coding Workspace"><strong>{ }</strong><small>CODE</small></button><button class="gallery-item reveal" data-title="Web Development"><strong>WEB</strong><small>DEVELOPMENT</small></button><button class="gallery-item reveal" data-title="Python Programming"><strong>PY</strong><small>PYTHON</small></button><button class="gallery-item reveal" data-title="Mobile Applications"><strong>APP</strong><small>MOBILE</small></button></div></section>
+
+<section id="contact" class="section"><div class="title reveal"><p>CONTACT</p><h2>Let's connect</h2></div>
+<form id="contactForm" class="card form reveal" novalidate><div class="form-grid"><label>Name<input id="name" placeholder="Enter your name"><small id="nameError"></small></label><label>Email<input id="email" type="email" placeholder="you@example.com"><small id="emailError"></small></label></div><label>Message<textarea id="message" rows="6" placeholder="Write your message..."></textarea><small id="messageError"></small></label><button class="btn primary" type="submit">Send Message</button><p id="formSuccess"></p></form></section>
 </main>
 
-<footer><div class="container footer-inner"><p>© 2026 Gaurav Kumar. Developers Arena Week 2.</p><a href="#home">Back to top ↑</a></div></footer>
-
-<script>
-const toggle=document.querySelector(".menu-toggle"), nav=document.querySelector(".nav-links");
-toggle.addEventListener("click",()=>nav.classList.toggle("open"));
-document.querySelectorAll(".nav-links a").forEach(a=>a.addEventListener("click",()=>nav.classList.remove("open")));
-document.querySelector(".contact-form").addEventListener("submit",e=>{e.preventDefault();alert("Thanks! This demo form is ready to connect to a backend.");});
-</script>
-</body>
-</html>
+<div id="modal" class="modal"><div class="modal-box"><button id="modalClose">×</button><div id="modalArt"></div><h3 id="modalTitle"></h3><p>Interactive gallery preview powered by JavaScript.</p></div></div>
+<footer>© <span id="year"></span> Gaurav Kumar. Built with HTML, CSS & JavaScript.</footer>
+<script src="script.js"></script>
+</body></html>

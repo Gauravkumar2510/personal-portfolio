@@ -1,31 +1,33 @@
-# Gaurav Kumar - Personal Portfolio | Developers Arena Week 2
-
-Responsive portfolio website created for **The Developers Arena Week 2: CSS - Styling Your Website**.
+# Gaurav Kumar - Interactive Portfolio | Developers Arena Week 3
 
 ## Requirements covered
-- External `style.css`
-- Element, class and ID selectors
-- Colors, backgrounds, fonts, borders, margin and padding
-- Flexbox and CSS Grid
-- Hover effects and transitions
-- Responsive navigation
-- Mobile media queries
-- Google Fonts
-- Custom color scheme
-- Responsive contact form
+- External `script.js`
+- JavaScript functions
+- DOM manipulation
+- Click, submit, input and keyboard event listeners
+- Contact form validation with error messages
+- Dark/Light mode
+- Local Storage
+- Mobile navigation
+- Interactive gallery modal
+- Dynamic greeting
+- Scroll reveal animation
+- Responsive design
 
 ## Structure
-```text
-personal-portfolio/
-├── index.html
-├── style.css
-├── README.md
-├── images/
-└── screenshots/
-```
+index.html
+style.css
+script.js
+README.md
+Documentation.pdf
+images/
 
 ## Run
-Open `index.html` in a browser.
+Open `index.html` in a browser. No installation is required.
 
-## GitHub Pages
-Use **Settings → Pages → Deploy from a branch → main → /(root)**.
+## Testing
+1. Toggle theme and reload: preference remains saved.
+2. Resize to mobile: hamburger menu appears.
+3. Submit invalid form: validation messages appear.
+4. Click gallery cards: modal opens.
+5. Press Escape: modal closes.
