@@ -90,9 +90,17 @@ const modalTitle = document.getElementById("modalTitle");
 document.querySelectorAll(".gallery-item").forEach(item => {
   item.addEventListener("click", () => {
     modalTitle.textContent = item.dataset.title;
+
+    const sourceImg = item.querySelector("img");
+
     modalArt.innerHTML = "";
-const img = item.querySelector("img").cloneNode(true);
-modalArt.appendChild(img);
+
+    const img = document.createElement("img");
+    img.src = sourceImg.getAttribute("src");
+    img.alt = sourceImg.getAttribute("alt") || "";
+
+    modalArt.appendChild(img);
+
     modal.classList.add("show");
   });
 });
