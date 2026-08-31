@@ -191,7 +191,7 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
   background: #0f1d2e !important;
   border-radius: 16px !important;
 
-  overflow: hidden !important;
+  overflow: visible !important;
 }
 
 #modal .modal-box img {
@@ -201,7 +201,7 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
   height: auto !important;
 
   max-width: 92vw !important;
-  max-height: 80vh !important;
+  max-height: 85vh !important;
 
   object-fit: contain !important;
 }
