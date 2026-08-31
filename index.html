@@ -1,53 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>Gaurav Kumar | Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaurav Kumar — Computer Science Engineer and Web Developer portfolio.">
+  <title>Gaurav Kumar | CSE Engineer & Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header class="header">
-<a href="#home" class="logo">Gaurav<span>.</span></a>
-<nav id="navMenu" class="nav"><a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></nav>
-<div class="actions"><button id="themeToggle" class="icon-btn">☀️</button><button id="menuToggle" class="menu-btn">☰</button></div>
-</header>
+  <div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div>
 
-<main>
-<section id="home" class="section hero">
-<div class="hero-content reveal">
-<p class="badge">COMPUTER SCIENCE & ENGINEERING</p>
-<p id="greeting" class="greeting">Hello! 👋</p>
-<h1>Hi, I'm <span>Gaurav Kumar</span></h1>
-<p class="hero-text">A B.Tech CSE student from Uttarakhand who enjoys building practical web and software projects. I am interested in web development, Python, mobile applications and problem solving.</p>
-<div class="buttons"><a href="#projects" class="btn primary">View Projects</a><a href="#contact" class="btn secondary">Contact Me</a></div>
-<div class="stats"><div><b>CSE</b><small>Student</small></div><div><b>HTML/CSS/JS</b><small>Web</small></div><div><b>Python</b><small>Programming</small></div></div>
-</div>
-</section>
+  <header class="header">
+    <a href="#home" class="brand" aria-label="Gaurav Kumar home">
+      <img src="images/gk-logo.svg" alt="GK logo" class="brand-logo">
+      <span>Gaurav<span class="dot">.</span></span>
+    </a>
+    <nav id="navMenu" class="nav" aria-label="Primary navigation">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a>
+      <a href="#projects">Projects</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-right">
+      <a class="phone-top" href="tel:+918266907888" aria-label="Call Gaurav">📞 +91 82669 07888</a>
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme">☀️</button>
+      <button id="menuToggle" class="menu-btn" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </header>
 
-<section id="about" class="section">
-<div class="title reveal"><p>ABOUT ME</p><h2>Building useful things with code.</h2></div>
-<div class="two-col"><div class="card reveal"><h3>Who I Am</h3><p>I am a Computer Science & Engineering student focused on learning by building projects. I enjoy frontend development, Python programming and practical software solutions.</p></div>
-<div class="card reveal"><h3>Current Focus</h3><ul><li>Responsive web development</li><li>JavaScript and DOM manipulation</li><li>Python and problem solving</li><li>Mobile application development</li></ul></div></div>
-</section>
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content reveal">
+        <div class="hero-badge"><span class="status-dot"></span> Open to opportunities</div>
+        <p class="eyebrow">COMPUTER SCIENCE & ENGINEERING</p>
+        <p id="greeting" class="greeting">Hello! 👋</p>
+        <h1>Hi, I'm <span>Gaurav Kumar</span></h1>
+        <h2 class="role">CSE Student <span>•</span> Web Developer <span>•</span> Problem Solver</h2>
+        <p class="hero-text">I build responsive websites and practical software projects with a focus on clean UI, useful functionality and continuous learning.</p>
+        <div class="buttons">
+          <a href="#projects" class="btn primary">View My Projects <span>↗</span></a>
+          <a href="#contact" class="btn secondary">Let's Connect</a>
+          <a href="#contact" class="btn outline">📞 Contact Me</a>
+        </div>
+        <div class="social-row">
+          <a href="https://github.com/Gauravkumar2510" target="_blank" rel="noopener" class="social">GitHub ↗</a>
+          <a href="#contact" class="social">Email ↗</a>
+          <a href="tel:+918266907888" class="social">Phone ↗</a>
+        </div>
+      </div>
 
-<section id="skills" class="section alt"><div class="title reveal"><p>SKILLS</p><h2>Technologies I work with</h2></div>
-<div class="skills"><div class="skill reveal">HTML5<div class="bar"><i style="width:90%"></i></div></div><div class="skill reveal">CSS3<div class="bar"><i style="width:85%"></i></div></div><div class="skill reveal">JavaScript<div class="bar"><i style="width:75%"></i></div></div><div class="skill reveal">Python<div class="bar"><i style="width:80%"></i></div></div><div class="skill reveal">React Native<div class="bar"><i style="width:70%"></i></div></div><div class="skill reveal">Git & GitHub<div class="bar"><i style="width:75%"></i></div></div></div></section>
+      <div class="hero-card reveal">
+        <div class="profile-frame">
+          <img src="images/gaurav-profile.png" alt="Professional profile photo of Gaurav Kumar">
+          <div class="profile-logo"><img src="images/gk-logo.svg" alt="GK logo"></div>
+        </div>
+        <div class="profile-caption">
+          <div><span class="card-label">DEVELOPER PROFILE</span><h3>Gaurav Kumar</h3><p>CSE Student · Web Developer</p></div>
+          <div class="verified">✓</div>
+        </div>
+        <div class="mini-grid">
+          <div><strong>Web</strong><small>Frontend</small></div><div><strong>Python</strong><small>Programming</small></div>
+          <div><strong>JS</strong><small>Interactive UI</small></div><div><strong>Git</strong><small>GitHub</small></div>
+        </div>
+      </div>
+    </section>
 
-<section id="projects" class="section"><div class="title reveal"><p>PROJECTS</p><h2>Some things I've built</h2></div>
-<div class="projects"><article class="project reveal"><b>01</b><h3>Smart Waste Management</h3><p>AI-based waste detection and notification concept using computer vision and mobile applications.</p><span>Python</span><span>YOLO</span><span>React Native</span></article>
-<article class="project reveal"><b>02</b><h3>Personal Portfolio</h3><p>A responsive portfolio website demonstrating HTML, CSS and JavaScript skills.</p><span>HTML</span><span>CSS</span><span>JavaScript</span></article>
-<article class="project reveal"><b>03</b><h3>Interactive Web Experiments</h3><p>Browser projects focused on DOM manipulation, events, forms and user interaction.</p><span>DOM</span><span>Events</span><span>UI</span></article></div></section>
+    <section id="about" class="section">
+      <div class="title reveal"><p>01 — ABOUT</p><h2>Turning ideas into useful projects.</h2></div>
+      <div class="about-grid">
+        <article class="card large reveal"><span class="card-label">WHO I AM</span><h3>A Computer Science student who learns by building.</h3>
+          <p>I am a B.Tech Computer Science & Engineering student from Uttarakhand. I enjoy frontend development, Python programming, mobile application development and solving practical problems through software.</p>
+          <p>My goal is to keep improving my development skills and build products that are simple to use, responsive and genuinely useful.</p>
+        </article>
+        <article class="card reveal"><span class="card-label">CURRENT FOCUS</span><ul class="clean-list">
+          <li><span>01</span> Responsive web development</li><li><span>02</span> JavaScript & DOM manipulation</li><li><span>03</span> Python & problem solving</li><li><span>04</span> Mobile application development</li>
+        </ul></article>
+      </div>
+    </section>
 
-<section id="gallery" class="section alt"><div class="title reveal"><p>INTERACTIVE GALLERY</p><h2>Click a card to preview</h2></div>
-<div class="gallery"><button class="gallery-item reveal" data-title="Coding Workspace"><strong>{ }</strong><small>CODE</small></button><button class="gallery-item reveal" data-title="Web Development"><strong>WEB</strong><small>DEVELOPMENT</small></button><button class="gallery-item reveal" data-title="Python Programming"><strong>PY</strong><small>PYTHON</small></button><button class="gallery-item reveal" data-title="Mobile Applications"><strong>APP</strong><small>MOBILE</small></button></div></section>
+    <section id="skills" class="section alt"><div class="title reveal"><p>02 — SKILLS</p><h2>Tools I use to build.</h2></div>
+      <div class="skills-grid">
+        <article class="skill-card reveal"><div class="skill-icon">&lt;/&gt;</div><h3>Frontend</h3><p>HTML5 · CSS3 · JavaScript</p><div class="skill-line"><i style="width:88%"></i></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">PY</div><h3>Programming</h3><p>Python · Problem Solving</p><div class="skill-line"><i style="width:80%"></i></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">JS</div><h3>Interaction</h3><p>DOM · Events · Local Storage</p><div class="skill-line"><i style="width:78%"></i></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">RN</div><h3>Mobile</h3><p>React Native · Expo</p><div class="skill-line"><i style="width:70%"></i></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">GH</div><h3>Tools</h3><p>Git · GitHub · VS Code</p><div class="skill-line"><i style="width:76%"></i></div></article>
+        <article class="skill-card reveal"><div class="skill-icon">UI</div><h3>Design</h3><p>Responsive · Accessible · Clean UI</p><div class="skill-line"><i style="width:82%"></i></div></article>
+      </div>
+    </section>
 
-<section id="contact" class="section"><div class="title reveal"><p>CONTACT</p><h2>Let's connect</h2></div>
-<form id="contactForm" class="card form reveal" novalidate><div class="form-grid"><label>Name<input id="name" placeholder="Enter your name"><small id="nameError"></small></label><label>Email<input id="email" type="email" placeholder="you@example.com"><small id="emailError"></small></label></div><label>Message<textarea id="message" rows="6" placeholder="Write your message..."></textarea><small id="messageError"></small></label><button class="btn primary" type="submit">Send Message</button><p id="formSuccess"></p></form></section>
-</main>
+    <section id="projects" class="section"><div class="title reveal"><p>03 — PROJECTS</p><h2>Things I've built.</h2></div>
+      <div class="projects-grid">
+        <article class="project-card featured reveal"><div class="project-top"><span class="project-number">01</span><span class="project-type">MAJOR PROJECT</span></div><h3>Smart Waste Management</h3><p>Computer-vision based waste monitoring concept with mobile application and notification workflow.</p><div class="tags"><span>Python</span><span>YOLO</span><span>React Native</span><span>Firebase</span></div></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-number">02</span><span class="project-type">WEB</span></div><h3>Interactive Personal Portfolio</h3><p>A responsive portfolio built with vanilla HTML, CSS and JavaScript, including theme switching, forms and interactive UI.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div><a class="project-link" href="https://github.com/Gauravkumar2510/personal-portfolio" target="_blank" rel="noopener">View source ↗</a></article>
+        <article class="project-card reveal"><div class="project-top"><span class="project-number">03</span><span class="project-type">SOFTWARE</span></div><h3>SmartFace Attendance</h3><p>Face-recognition attendance project focused on practical automation using computer vision.</p><div class="tags"><span>Python</span><span>OpenCV</span><span>LBPH</span></div></article>
+      </div>
+    </section>
 
-<div id="modal" class="modal"><div class="modal-box"><button id="modalClose">×</button><div id="modalArt"></div><h3 id="modalTitle"></h3><p>Interactive gallery preview powered by JavaScript.</p></div></div>
-<footer>© <span id="year"></span> Gaurav Kumar. Built with HTML, CSS & JavaScript.</footer>
-<script src="script.js"></script>
-</body></html>
+    <section id="gallery" class="section alt"><div class="title reveal"><p>04 — GALLERY</p><h2>Click to explore.</h2></div><div class="gallery">
+      <button class="gallery-item reveal" data-title="Coding Workspace"><strong>{ }</strong><small>CODE</small></button><button class="gallery-item reveal" data-title="Web Development"><strong>WEB</strong><small>DEVELOPMENT</small></button><button class="gallery-item reveal" data-title="Python Programming"><strong>PY</strong><small>PYTHON</small></button><button class="gallery-item reveal" data-title="Mobile Applications"><strong>APP</strong><small>MOBILE</small></button>
+    </div></section>
+
+    <section id="contact" class="section"><div class="title reveal"><p>05 — CONTACT</p><h2>Let's build something useful.</h2></div>
+      <div class="contact-layout">
+        <div class="contact-card card reveal"><span class="card-label">GET IN TOUCH</span><h3>Have a project or opportunity?</h3><p>Feel free to reach out. I'm open to internships, projects and development opportunities.</p>
+          <a class="contact-item" href="tel:+918266907888"><span>📞</span><div><small>PHONE</small><strong>+91 82669 07888</strong></div></a>
+          <a class="contact-item" href="mailto:gkarya2503@gmail.com"><span>✉️</span><div><small>EMAIL</small><strong>gkarya2503@gmail.com</strong></div></a>
+          <a class="contact-item" href="https://github.com/Gauravkumar2510" target="_blank" rel="noopener"><span>💻</span><div><small>GITHUB</small><strong>Gauravkumar2510</strong></div></a>
+        </div>
+        <form id="contactForm" class="card form reveal" novalidate>
+          <div class="form-grid"><label>Name<input id="name" autocomplete="name" placeholder="Your name"><small id="nameError"></small></label><label>Email<input id="email" type="email" autocomplete="email" placeholder="you@example.com"><small id="emailError"></small></label></div>
+          <label>Message<textarea id="message" rows="6" placeholder="Tell me about your idea..."></textarea><small id="messageError"></small></label>
+          <button class="btn primary" type="submit">Validate Message <span>→</span></button><p id="formSuccess"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-box"><button id="modalClose" aria-label="Close">×</button><div id="modalArt"></div><h3 id="modalTitle"></h3><p>Interactive gallery preview powered by JavaScript.</p></div></div>
+
+  <footer><div class="footer-inner"><a href="#home" class="brand footer-brand"><img src="images/gk-logo.svg" alt="GK logo" class="brand-logo"><span>Gaurav<span class="dot">.</span></span></a><p>© <span id="year"></span> Gaurav Kumar · Built with HTML, CSS & JavaScript.</p><a href="https://github.com/Gauravkumar2510" target="_blank" rel="noopener">GitHub ↗</a></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
