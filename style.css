@@ -172,12 +172,14 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
 
 #modal .modal-box {
   position: relative !important;
-  width: 95vw !important;
-  max-width: 1000px !important;
+  width: 96vw !important;
+  max-width: 1100px !important;
+
+  height: auto !important;
   max-height: 95vh !important;
 
   margin: 0 !important;
-  padding: 15px !important;
+  padding: 10px !important;
 
   display: flex !important;
   flex-direction: column !important;
@@ -189,8 +191,7 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
   background: #0f1d2e !important;
   border-radius: 16px !important;
 
-  overflow-y: auto !important;
-  overflow-x: hidden !important;
+  overflow: hidden !important;
 }
 
 #modal .modal-box img {
@@ -199,15 +200,16 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
   width: auto !important;
   height: auto !important;
 
-  max-width: 90vw !important;
-  max-height: 78vh !important;
+  max-width: 92vw !important;
+  max-height: 80vh !important;
 
   object-fit: contain !important;
 }
 
-#modal button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
+#modal .modal-box p {
+  display: none !important;
+}
+
+#modal .modal-box h3 {
+  margin: 5px 0 0 !important;
 }
