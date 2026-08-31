@@ -90,7 +90,7 @@ const modalTitle = document.getElementById("modalTitle");
 document.querySelectorAll(".gallery-item").forEach(item => {
   item.addEventListener("click", () => {
     modalTitle.textContent = item.dataset.title;
-    modalArt.textContent = item.querySelector("strong").textContent;
+    modalArt.textContent = item.querySelector("img").outerHTML;
     modal.classList.add("show");
   });
 });
