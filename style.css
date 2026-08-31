@@ -166,7 +166,7 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
   background: rgba(0, 0, 0, 0.88);
 }
 
-#modal.open {
+#modal.show {
   display: flex !important;
 }
 
