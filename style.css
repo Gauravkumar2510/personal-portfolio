@@ -146,3 +146,42 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
     font-size: 17px;
   }
 }
+/* =========================
+   GALLERY IMAGE MODAL FIX
+========================= */
+
+.modal {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.85);
+}
+
+.modal.open,
+.modal.active {
+  display: flex;
+}
+
+.modal-box {
+  position: relative;
+  width: min(900px, 95vw);
+  max-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.modal-box img {
+  display: block;
+  max-width: 100%;
+  max-height: 85vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
