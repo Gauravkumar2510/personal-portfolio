@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+or<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -246,10 +246,64 @@
           <a class="contact-item" href="mailto:gkarya2503@gmail.com"><span>✉️</span><div><small>EMAIL</small><strong>gkarya2503@gmail.com</strong></div></a>
           <a class="contact-item" href="https://github.com/Gauravkumar2510" target="_blank" rel="noopener"><span>💻</span><div><small>GITHUB</small><strong>Gauravkumar2510</strong></div></a>
         </div>
-        <form id="contactForm" class="card reveal" action="https://formspree.io/f/xrpgekro" method="POST">
-          <div class="form-grid"><label>Name<input id="name" autocomplete="name" placeholder="Your name"><small id="nameError"></small></label><label>Email<input id="email" type="email" autocomplete="email" placeholder="you@example.com"><small id="emailError"></small></label></div>
-          <label>Message<textarea id="message" rows="6" placeholder="Tell me about your idea..."></textarea><small id="messageError"></small></label>
-          <button class="btn primary" type="submit">Validate Message <span>→</span></button><p id="formSuccess"></p>
+        <form
+  id="contactForm"
+  class="card reveal"
+  action="https://formspree.io/f/xrpgekro"
+  method="POST"
+>
+
+  <div class="form-grid">
+
+    <label>
+      Name
+      <input
+        type="text"
+        id="name"
+        name="name"
+        autocomplete="name"
+        placeholder="Your name"
+        required
+      >
+      <small id="nameError"></small>
+    </label>
+
+    <label>
+      Email
+      <input
+        type="email"
+        id="email"
+        name="email"
+        autocomplete="email"
+        placeholder="you@example.com"
+        required
+      >
+      <small id="emailError"></small>
+    </label>
+
+  </div>
+
+  <label>
+    Message
+    <textarea
+      id="message"
+      name="message"
+      rows="6"
+      placeholder="Tell me about your idea..."
+      required
+    ></textarea>
+    <small id="messageError"></small>
+  </label>
+
+  <button
+    class="btn primary"
+    type="submit"
+  >
+    Validate Message <span>→</span>
+  </button>
+
+  <p id="formSuccess"></p>
+
         </form>
       </div>
     </section>
