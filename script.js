@@ -154,19 +154,61 @@ if (form && nameEl && emailEl && msgEl) {
     }
 
     // Stop submission only when form is invalid
-    if (!valid) {
-      event.preventDefault();
-      return;
+if (!valid) {
+    event.preventDefault();
+    return;
+}
+
+// Submit to Formspree using JSON
+event.preventDefault();
+
+if (successElement) {
+    successElement.textContent = "✓ Sending message...";
+}
+
+const formData = {
+    name: name,
+    email: email,
+    message: message
+};
+
+fetch(form.action, {
+    method: "POST",
+    headers: {
+        "Accept": "application/json",
+        "Content-Type": "application/json"
+    },
+    body: JSON.stringify(formData)
+})
+.then(response => response.json())
+.then(data => {
+
+    if (data.ok) {
+        if (successElement) {
+            successElement.textContent =
+                "✓ Message sent successfully!";
+        }
+
+        form.reset();
+
+    } else {
+        if (successElement) {
+            successElement.textContent =
+                "✕ Message could not be sent. Please try again.";
+        }
     }
 
-    // IMPORTANT:
-    // Do NOT call preventDefault() here.
-    // Formspree will receive the form normally.
+})
+.catch(error => {
+
+    console.error("Formspree Error:", error);
 
     if (successElement) {
-      successElement.textContent = "✓ Sending message...";
+        successElement.textContent =
+            "✕ Something went wrong. Please try again.";
     }
-  });
+
+});
 
 
   // Input border effect
