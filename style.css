@@ -213,3 +213,9 @@ footer{border-top:1px solid var(--border);padding:25px 7%;color:var(--muted)}.fo
 #modal .modal-box h3 {
   margin: 5px 0 0 !important;
 }
+/* FIX: reveal elements visible by default */
+.reveal {
+  opacity: 1 !important;
+  transform: none !important;
+  visibility: visible !important;
+}
