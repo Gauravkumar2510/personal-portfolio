@@ -154,19 +154,19 @@ if (form && nameEl && emailEl && msgEl) {
     }
 
     // Stop submission only when form is invalid
-if (!valid) {
-    event.preventDefault();
-    return;
-}
+    if (!valid) {
+      event.preventDefault();
+      return;
+    }
 
-// IMPORTANT:
-// Do NOT call preventDefault() here
-// Formspree will receive the form normally.
+    // IMPORTANT:
+    // Do NOT call preventDefault() here.
+    // Formspree will receive the form normally.
 
-if (successElement) {
-    successElement.textContent = "✓ Sending message...";
-}
-
+    if (successElement) {
+      successElement.textContent = "✓ Sending message...";
+    }
+  });
 
 
   // Input border effect
@@ -337,4 +337,4 @@ const yearElement = document.getElementById("year");
 if (yearElement) {
   yearElement.textContent =
     new Date().getFullYear();
-                          }
+}
